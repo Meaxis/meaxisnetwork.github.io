@@ -1,0 +1,122 @@
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	height: 9vh;
+
+	background-color: var(--level-1-color);
+	display: table-cell;
+	vertical-align: middle;
+
+	z-index: 1000;
+
+	box-shadow: black 0px 0px 9px;
+}
+
+.profile-card {
+	box-shadow: black 0px 0px 9px;
+}
+
+nav img {
+	height: 8vh;
+	margin-top: .5vh;
+	border-radius: 50%;
+
+	margin-left: .75vw;
+
+	transition: background-color 0.2s ease;
+}
+
+nav img:hover {
+	background-color: var(--level-2-color);
+	cursor: pointer;
+}
+
+nav .nav-separator {
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+
+nav .nav-links {
+	display: flex;
+	justify-content: flex-start;
+	width: 60vw;
+	height: 9vh;
+
+	position: absolute;
+	top: 0;
+	left: calc(9vh + 2vw);
+
+	color: var(--level-5-color);
+}
+
+nav .nav-account {
+	display: block;
+	position: absolute;
+
+	height: 8vh;
+	width: 8vh;
+
+	position: absolute;
+	right: 1vw;
+	top: 0;
+}
+
+nav .nav-account img {
+	height: 7vh;
+	width: 7vh;
+
+	margin-top: 1vh;
+}
+
+nav .nav-account .notification-dot {
+	background-color: #f54b42;
+	border: solid 3px var(--level-1-color);
+	border-radius: 50%;
+
+	position: absolute;
+
+	bottom: -1vh;
+	right: -1vh;
+	z-index: 3;
+
+	width: 2.5vh;
+	height: 2.5vh;
+
+	text-align: center;
+
+	line-height: 2.5vh;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--level-5-color);
+
+	height: 9vh;
+	vertical-align: middle;
+
+	line-height: 9vh;
+
+	font-size: 3vh;
+	transition: color 0.2s ease;
+	margin-right: 2vw;
+
+	font-family: Montserrat;
+}
+
+nav a:hover {
+	color: var(--level-6-color);
+}
+
+@media screen and (max-width: 600px)
+{
+	.nav-links {
+		display: none !important;
+	}
+
+	nav .nav-account {
+		right: 3vw;
+	}
+}
